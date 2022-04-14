@@ -66,3 +66,126 @@ blockquote {
 	- https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/
 */
 
+/* hlavicka */
+header h1 {
+	font-size: 80px;
+	color: var(--limetka);
+	margin-bottom: 40px;
+}
+
+header .meta {
+	font-size: 16px;
+	color: var(--seda);
+}
+
+/*	odstavce*/
+p {
+	margin-top: 0;
+}
+
+/* tip */
+
+.tip {
+	background-color: var(--svetla);
+	font-size: 16px;
+	padding: 20px;
+	color: var(--tmava);
+	margin: 0;
+}
+.tip p {
+	margin: 0;
+}
+.tip a {
+	color: var(--oranzova);
+}
+.tip-vlevo {
+	border-right: 2px solid var(--zluta);
+	text-align: right;
+}
+.tip-vpravo {
+	border-left: 2px solid var(--zluta);
+	text-align: left;
+}
+
+.tip-vlevo img {
+	max-width: 100px;
+}
+
+/* figure */
+figure {
+	margin: 0;
+	margin-bottom: 40px;
+}
+figure img {
+	max-width: 100%;
+}
+figcaption {
+	font-size: 16px;
+	color: var(--seda);
+}
+
+/*	nadpisy */
+h2 {
+	font-size: 60px;
+	color: var(--limetka);
+	margin-bottom: 20px;
+}
+
+/*	citaty  */
+blockquote {
+	font-size: 40px;
+	color: var(--seda);
+	text-align: center;
+}
+
+blockquote::after, blockquote::before {
+    content:"";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: var(--limetka);        
+}
+
+blockquote::after {
+	margin: 20px auto 0 auto;          
+}
+
+blockquote::before {
+	margin: 0 auto 20px auto;          
+}
+
+/*	paticka */
+footer, footer a {
+	font-size: 16px;
+	color: var(--seda);
+}
+
+/*	grid */
+.blog {
+	display: grid;
+	grid-template-columns: 1fr 4fr 2fr;
+	column-gap: 40px;
+}
+
+header, p, footer {
+	grid-column: 2;
+}
+
+figure {
+	grid-column: 1 / -1;
+}
+
+.tip {
+	align-self: center;
+}
+.tip-vlevo {
+	grid-column: 1;
+}
+
+blockquote {
+	grid-column: 1 / -1;
+}
+
+h2 {
+	grid-column: 2;
+}
