@@ -117,7 +117,7 @@ figure {
 	margin-bottom: 40px;
 }
 figure img {
-	max-width: 100%;
+	width: 100%;
 }
 figcaption {
 	font-size: 16px;
